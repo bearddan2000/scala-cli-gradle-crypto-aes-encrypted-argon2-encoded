@@ -1,0 +1,17 @@
+apply plugin: 'scala'
+apply plugin: 'application'
+
+targetCompatibility = sourceCompatibility = "1.8"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.scala-lang:scala-library:2.12.10'
+    implementation "commons-codec:commons-codec:1.15"
+    implementation "javax.xml.bind:jaxb-api:2.3.1"
+    implementation "de.mkammerer:argon2-jvm:2.7"
+}
+
+mainClassName = 'example.Main'
